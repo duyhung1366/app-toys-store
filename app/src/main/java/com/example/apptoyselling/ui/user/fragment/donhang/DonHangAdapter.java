@@ -56,11 +56,12 @@ public class DonHangAdapter extends RecyclerView.Adapter<DonHangAdapter.DonHangV
             holder.binding.btnXacNhan.setVisibility(View.GONE);
         }
         Log.d("TAG", "donHang: " + donHang.getIdDH() + " - " + donHang.getStatusDH());
-        if (donHang.getStatusDH().equals("Đã xác nhận")){
+        String statusDH = donHang.getStatusDH();
+        if (statusDH.equals("Đã xác nhận") || statusDH.equals("Đã hủy")){
             holder.binding.btnXacNhan.setEnabled(false);
             holder.binding.btnHuyDH.setEnabled(false);
-            holder.binding.txtTrangThaiDH.setTextColor(Color.parseColor("#1E97BD"));
-        }else {
+            holder.binding.txtTrangThaiDH.setTextColor(Color.parseColor(statusDH.equals("Đã hủy") ? "#F42A2A" :"#1E97BD"));
+        } else {
             holder.binding.txtTrangThaiDH.setTextColor(Color.parseColor("#F42A2A"));
             holder.binding.btnXacNhan.setEnabled(true);
             holder.binding.btnHuyDH.setEnabled(true);
