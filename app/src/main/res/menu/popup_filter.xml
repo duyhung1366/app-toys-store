@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemTQ"
+        android:title="Trung Quốc"/>
+    <item android:id="@+id/itemVN"
+        android:title="Việt Nam"/>
+    <item android:id="@+id/itemDuc"
+        android:title="Đức"/>
+    <item android:id="@+id/itemMy"
+        android:title="Mỹ"/>
+</menu>

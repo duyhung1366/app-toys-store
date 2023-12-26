@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.admin.qlsanpham.ThemSanPhamActivity"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:background="@color/bgColor">
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:id="@+id/imgBack"
+                android:background="@drawable/custom_circle_white">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/baseline_arrow_back_24" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sửa sản phẩm"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_editext_login"
+                android:hint="Tên sản phẩm"
+                android:id="@+id/edtTenSP"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_editext_login"
+                    android:hint="Hình ảnh"
+                    android:layout_weight="2.5"
+                    android:id="@+id/hinhAnhSP"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="15dp"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imgCamera"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_camera_alt_24"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_editext_login"
+                android:hint="Mô tả"
+                android:id="@+id/edtMoTaSP"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:maxLines="4"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_editext_login"
+                android:hint="Giá tiền"
+                android:id="@+id/edtGiaTienSP"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_editext_login"
+                android:hint="Thương hiệu"
+                android:id="@+id/edtThuongHieuSP"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_editext_login"
+                android:hint="Loại sản phẩm"
+                android:id="@+id/edtType"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSuaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sửa sản phẩm"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button_login"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</layout>
